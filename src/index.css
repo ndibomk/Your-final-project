@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Share+Tech&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 15px;
+  cursor: default;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #222;
+  height: 100%;
+}
+
+/* Menu */
+
+.custom-details-padding {
+  padding: 50px;
+}
+
+.logo {
+  height: 45px;
+  vertical-align: middle;
+}
+
+.brand-logo {
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+
+/* Hero section */
+.hero-section h5{
+  font-family: "Share Tech", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.hero-section p{
+  font-size: 18px;
+}
+
+form {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+form h5 {
+  margin: 20px 0;
+}
+
+.createProjectBtn {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.createMilestoneBtn {
+  margin-top: 9px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.custom-milestone-style{
+  padding: 10px 20px;
+}
+
+.custom-table-style {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px .7px 2px .7px  rgb(209, 209, 209);;
+}
+
+.custom-table-style th,
+.custom-table-style td {
+  padding: 20px;
+}
+.input-field input{
+  background-color: #faf5f5 !important;
+  height: 3rem;
+  width: 100%;
+  border-top: none;
+  border-left:none;
+  border-right: none;
+}
+.custom-table-style:hover {
+  background: #fafafa;
+}
+
+.custom-table-style:hover .custom-link {
+  animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateX(5px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.custom-badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 9px;
+}
+
+.createMilestone {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.remark {
+  border-left-style: solid;
+  border-left-color: rgb(1, 167, 167);
+  border-left-width: 5px;
+}
+
+.remark:hover {
+  border-left-style: solid;
+  border-left-color: rgb(167, 1, 51);
+  border-left-width: 5px;
+}
+
+.custom-font-caps {
+  font-variant: small-caps;
+}
+
+.custom-link {
+  cursor: pointer;
+  color: #2196f3;
+}
+
+.custom-link:hover {
+  transform: scale(1.2);
+  color: #008cff;
+}
+
+.flex-container > div {
+  margin: 10px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom-toggle-button {
+  width: 50px;
+  text-align: center;
+  margin-left: 15px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.custom-toggle-button .material-icons {
+  font-size: 35px;
+}
+
+.custom-sidebar {
+  height: 100%;
+  background: #242424;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 250px;
+  z-index: 300;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.custom-sidebar * {
+  padding: 0;
+  margin: 0;
+}
+
+.custom-sidebar.open {
+  transform: translateX(0);
+}
+
+.custom-sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 99%;
+}
+
+.custom-backdrop {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  top: 0;
+  left: 0;
+}
+
+.custom-fixed {
+  position: fixed;
+  z-index: 100;
+  padding: 0px 6vw;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+  height: 70px;
+}
+
+.custom-content-top-margin {
+  margin-top: 90px;
+}
+
+.custom-member-ui,
+.custom-user-ui {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #222;
+}
+
+.custom-user-ui .user,
+.custom-member-ui .member {
+  padding: 7px;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  background: rgb(0, 225, 255);
+}
+
+.custom-user-ui .user {
+  background: rgb(0, 191, 216);
+}
+
+.custom-user-ui:hover {
+  color: rgb(18, 117, 117);
+}
+
+.custom-member-ui:hover {
+  color: rgb(4, 129, 212);
+}
+
+.custom-icon-margin {
+  margin-right: 5px;
+}
+
+/* Show Desktop Allocation */
+
+.show-allocation {
+  padding: 5px;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.show-allocation h4 {
+  font-size: 24px;
+}
+
+.show-allocation h5 {
+  font-size: 20px;
+}
+
+.show-allocation .member {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0.5rem;
+  background: rgb(0, 204, 231);
+  overflow-x: auto;
+}
+
+/* Users level */
+.coordinator-level,
+.supervisor-level,
+.student-level {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.coordinator-level {
+  background: rgb(220, 20, 60);
+}
+
+.supervisor-level {
+  background: rgb(255, 111, 0);
+}
+
+.student-level {
+  background: rgb(4, 167, 118);
+}
+
+/* number badge */
+
+.number-badge {
+  padding: 5px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgb(1, 212, 201);
+}
+
+/* Project A */
+
+.projectA {
+  display: flex;
+  justify-content: space-between;
+  width: 113px;
+  border: 2px solid rgb(169, 169, 169);
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 17px;
+}
+
+.projectASummary {
+  font-size: inherit;
+  padding: 0px;
+  border: none;
+}
+
+.projectA i {
+  cursor: pointer;
+}
+
+.projectASummary i {
+  cursor: default;
+}
+
+/* Responsive */
+
+@media (min-width: 992px) {
+  .custom-sidebar {
+    display: none;
+  }
+
+  .custom-fixed {
+    padding: 0 15vw;
+  }
+  .custom-toggle-button {
+    display: none;
+  }
+}
